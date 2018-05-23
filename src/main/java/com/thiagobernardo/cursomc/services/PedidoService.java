@@ -21,4 +21,9 @@ public class PedidoService {
 		return obj.orElseThrow(() -> new ObjectNotFoundException(
 				"Objeto não encontrato ! Id: " + id + ", Tipo: " + Pedido.class.getName()));
 	}
+	
+	public Pedido insert(Pedido obj) {
+		obj.setId(null);
+		return repository.save(obj);
+	}
 }
