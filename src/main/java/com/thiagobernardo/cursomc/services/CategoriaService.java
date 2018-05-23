@@ -30,13 +30,13 @@ public class CategoriaService {
 	}
 
 	public Categoria insert(Categoria obj) {
-		Categoria newObj = find(obj.getId());
-		updateData(newObj, obj);
-		return repository.save(newObj);
+		obj.setId(null);
+		return repository.save(obj);
 	}
 
 	public Categoria update(Categoria obj) {
-		find(obj.getId());
+		Categoria newObj = find(obj.getId());
+		updateData(newObj, obj);
 		return repository.save(obj);
 	}
 
