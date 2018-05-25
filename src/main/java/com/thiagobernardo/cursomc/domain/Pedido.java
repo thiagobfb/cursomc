@@ -1,7 +1,6 @@
 package com.thiagobernardo.cursomc.domain;
 
 import java.io.Serializable;
-import java.text.DateFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
