@@ -1,9 +1,9 @@
 package com.thiagobernardo.cursomc.services.exceptions;
 
 public class DataIntegrityException extends RuntimeException {
-
-	private static final long serialVersionUID = 6683813502562562555L;
 	
+	private static final long serialVersionUID = -8702062276139599677L;
+
 	public DataIntegrityException(String msg) {
 		super(msg);
 	}
