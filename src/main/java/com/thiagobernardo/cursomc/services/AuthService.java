@@ -40,7 +40,7 @@ public class AuthService {
 
 	private String newPassword() {
 		char[] vet = new char[10];
-		for (int i=0; i<10; i++) {
+		for (int i = 0; i < 10; i++) {
 			vet[i] = randomChar();
 		}
 		return new String(vet);
